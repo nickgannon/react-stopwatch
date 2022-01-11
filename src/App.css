@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+    font-family: 'Alata', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content .time {
+    font-size: 6rem;
+    margin-bottom: 0.75rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content button {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.55rem;
+    border: none;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content #start {
+    background-color: #C35858;
+    padding: 0.75rem 2rem;
+    margin-right: 0.25rem;
+}
+
+#start:hover {
+    background-color: red;
+}
+
+.content #stop {
+    background-color: #5F886A;
+    padding: 0.75rem 2rem;
+    margin-left: 0.25rem;
+}
+
+#stop:hover {
+    background-color: green;
+}
+.startStop {
+    margin-bottom: 1rem;
+}
+
+.content #reset {
+    background-color: #4E8DA8;
+    padding: 0.75rem 4.95rem;
+}
+
+#reset:hover {
+    background-color: blue;
+}
+
+@media(min-width: 550px) {
+    .content .time {
+        font-size: 10rem;
+    }
+
+    .content button {
+        font-size: 1.75rem;
+    }
+
+    .content #reset {
+        padding: 0.75rem 5.6rem;
+    }
 }
