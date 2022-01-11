@@ -3,9 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Screenshots
-<p>
-<img src="Images/Screenshot.png">
-</p>
+<img src="/src/Images/Screenshot.png">
 
 ## Available Scripts
 
